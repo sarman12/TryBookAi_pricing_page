@@ -1,0 +1,135 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #0D1117;
+    color: #bfc4db;
+    line-height: 1.6;
+}
+
+/* Main Container */
+.main {
+    text-align: center;
+    /* border: 2px red solid; */
+}
+
+/* Heading */
+.heading{
+    width: 100%;
+    padding:1rem;
+    background-color:rgb(100, 13, 238);
+}
+.heading h1 {
+    margin: 0;
+    padding: 20px 0;
+    margin-bottom: 20px;
+    color: white;
+    font-size: 2.5em;
+}
+
+/* Content */
+.main_content {
+    display: grid;
+    text-align: left;
+    grid-template-columns: repeat(1,1fr);
+    gap: 2rem;
+    border: 2px red solid;
+    padding: 30px;
+    background-color: #161B22;
+    border-radius: 8px;
+}
+
+
+
+.main_content p {
+    margin-bottom: 20px;
+}
+
+.overview{
+    /* border: 2px red solid; */
+    max-width: 50%;
+    padding: 1rem;
+    margin: auto;
+    background-color: #232a35;
+    border-radius: 20px;
+}
+.overview h2{
+        color: #5d0bf5;
+    margin-top: 30px;
+    margin-left: 20px;
+
+}
+
+.overview p{
+    text-align: justify;
+    margin-top: -10px;
+    margin: 0px 20px;
+}
+.authentication{
+    width: 50%;
+    padding: 1rem;
+        margin: auto;
+        background-color: #232a35;
+        border-radius: 20px;
+}
+.authentication h2{
+    font-size: 30px;
+    color: #5d0bf5;
+    margin-left: 20px;
+    margin-bottom: -10px;
+}
+.authentication p{
+    margin-left: 20px;
+}
+.api {
+    margin: 0px 20px;
+    background-color: #21262d;
+    border-radius: 10px;
+    padding: 5px;
+    color: #bfc4db;
+    border: 1px rgb(103, 94, 94) solid;
+}
+.api div{
+    margin: 0px 20px;
+    border:1px rgb(103, 94, 94) solid;
+    width: fit-content;
+    padding: 10px;
+    padding-top: 0;
+    border-radius: 10px;
+    padding-bottom: 0;
+}
+
+button {
+    margin: 0px 20px;
+    background-color: #0fedf1;
+    color: white;
+    padding: 17px 20px;
+    font-size: 17px;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.input{
+    margin: 0px 20px;
+    padding: 30px;
+    border-radius: 10px;
+    border: 1px rgb(103, 94, 94) solid;
+    margin-top: 20px;
+    
+}
+
+button:hover {
+    background-color: #09d2fa;
+}
+
+input[type="text"] {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #30363d;
+    background-color: #0d1117;
+    color: #bfc4db;
+    margin-top: 10px;
+    width: 80%;
+}
