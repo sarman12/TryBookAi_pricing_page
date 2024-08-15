@@ -1,4 +1,3 @@
-
 body {
     margin: 0;
     padding: 0;
@@ -10,37 +9,71 @@ body {
 }
 
 
-/* Main Container */
 .main {
     text-align: center;
-    /* border: 2px red solid; */
-    /* width: 100vw; */
+    height: fit-content;
 }
 
 /* Heading */
-.heading{
-    /* width: 100%; */
-    padding:1rem;
-    background-color:rgb(100, 13, 238);
+.heading {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    padding: 2rem;
+    padding-bottom: 1px;
+    background-color: rgb(100, 13, 238);
 }
+
 .heading h1 {
     margin: 0;
-    padding: 20px 0;
     margin-bottom: 20px;
     color: white;
     font-size: 2.5em;
 }
 
+nav {
+    background-color: #1E2230;
+    padding: 20px 0px;
+    margin-top: -10px;
+    height: 7vh;
+    width: 100vw;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 20px;
+    font-weight: bold;
+    color: #bfc4db;
+    cursor: pointer;
+}
+
+nav ul li a {
+    color: inherit;
+    text-decoration: none;
+}
+
+nav ul li:hover {
+    color: white;
+}
+
 /* Content */
 .main_content {
+    position: relative;
+    margin-top: 17vh;
     display: grid;
     text-align: left;
-    grid-template-columns: repeat(1,1fr);
+    grid-template-columns: repeat(1, 1fr);
     gap: 2rem;
-    /* border: 2px red solid; */
-    padding: 30px;
-    background-color: #161B22;
+    background-color: rgb(22, 27, 34,.9);
     border-radius: 8px;
+    padding-bottom: 5rem;
+    /* margin-bottom: -10rem; */
 }
 
 
@@ -49,58 +82,64 @@ body {
     margin-bottom: 20px;
 }
 
-.overview{
+.overview {
     /* border: 2px red solid; */
-    width: 45%;
+    width: 50%;
     padding: 1rem;
     margin: auto;
     background-color: #232a35;
     border-radius: 20px;
 }
-.overview h2{
-        color: #5d0bf5;
+
+.overview h2 {
+    color: #5d0bf5;
     margin-top: 30px;
     margin-left: 20px;
 
 }
 
-.overview p{
+.overview p {
     text-align: justify;
     margin-top: -10px;
     margin: 0px 20px;
 }
-.authentication{
-    width: 45%;
+
+.authentication {
+    width: 50%;
     padding: 1rem;
-        margin: auto;
-        background-color: #232a35;
-        border-radius: 20px;
+    margin: auto;
+    background-color: #232a35;
+    border-radius: 20px;
 }
-.authentication h2{
+
+.authentication h2 {
     font-size: 30px;
     color: #5d0bf5;
     margin-left: 20px;
     margin-bottom: -10px;
 }
-.authentication p{
+
+.authentication p {
     margin-left: 20px;
 }
 
 .endpoints {
-    width: 45%;
-        padding: 1rem;
-        margin: auto;
-        background-color: #232a35;
-        border-radius: 20px;
+    width: 50%;
+    padding: 1rem;
+    margin: auto;
+    background-color: #232a35;
+    border-radius: 20px;
 
 }
-.endpoints h2{
+
+.endpoints h2 {
     font-size: 30px;
-        color: #6d23f5;
-        margin-left: 20px;
-        margin-bottom: -10px;
+    color: #6d23f5;
+    margin-left: 20px;
+    margin-bottom: -10px;
 }
-.endpoints p{
+
+.endpoints p {
     margin-left: 20px;
     margin-top: 40px;
     margin-bottom: -0px;
@@ -108,7 +147,8 @@ body {
     font-weight: 600;
     color: #8e52fe;
 }
-.generate_book{
+
+.generate_book {
     margin-left: 20px;
     /* border: 2px red solid; */
     display: flex;
@@ -116,8 +156,9 @@ body {
     padding: 5px;
     align-items: center;
 }
-.generate_book .p{
-    padding:5px;
+
+.generate_book .p {
+    padding: 5px;
     background-color: #09d2fa;
     color: black;
     font-size: 15px;
@@ -126,20 +167,21 @@ body {
     width: 50px;
 
 }
-.generate_book .generate{
-    padding:15px;
+
+.generate_book .generate {
+    padding: 15px;
     border-radius: 5px;
     background-color: rgb(78, 78, 233);
     letter-spacing: 3px;
-    font-weight:600;
+    font-weight: 600;
 }
 
 /* Request Body Table */
 .request table {
     /* width: 90%; */
     /* margin: auto; */
-    
-    
+
+
     border-collapse: collapse;
     background-color: #161b22;
     color: #bfc4db;
@@ -150,6 +192,7 @@ body {
 
 .request th,
 .request td {
+    letter-spacing: 1px;
     padding: 15px;
     font-weight: 600;
     text-align: left;
@@ -164,7 +207,7 @@ body {
 }
 
 .request tr:last-child td {
-    
+
     border-bottom: none;
 }
 
@@ -209,41 +252,46 @@ body {
     color: #bfc4db;
     font-size: 15px;
     line-height: 2;
-    
+
 }
+
 .response pre code {
     color: #bfc4db;
     font-size: 15px;
     line-height: 1.5;
     padding: 2px;
     border: 1px rgb(88, 87, 87) solid;
-    
+
 }
+
 .tutorial {
     text-align: justify;
-    width: 45%;
-        padding: 1.3rem;
-        margin: auto;
-        background-color: #232a35;
-        border-radius: 20px;
+    width: 50%;
+    padding: 1.3rem;
+    margin: auto;
+    background-color: #232a35;
+    border-radius: 20px;
 
 
 }
-.tutorial h2{
+
+.tutorial h2 {
     margin-top: 20px;
     font-size: 30px;
-        color: #6d23f5;
-        margin-left: 20px;
+    color: #6d23f5;
+    margin-left: 20px;
 
 }
+
 .tutorial h3 {
     font-size: 20px;
     color: #6a39c6;
     margin-left: 20px;
     margin-bottom: -5px;
 
-    
+
 }
+
 .tutorial p {
     margin: 0px 20px;
     margin-bottom: 10px;
@@ -256,12 +304,12 @@ body {
 
 .code_examples {
     text-align: justify;
-        width: 45%;
-        padding: 1.5rem;
-        padding-top: 2rem;
-        margin: auto;
-        background-color: #232a35;
-        border-radius: 20px;
+    width: 50%;
+    padding: 1.5rem;
+    padding-top: 2rem;
+    margin: auto;
+    background-color: #232a35;
+    border-radius: 20px;
 }
 
 .code_examples h2 {
@@ -295,12 +343,13 @@ pre {
 }
 
 code {
-    
-    color: rgb(243, 239, 239,0.5);
+
+    color: rgb(243, 239, 239, 0.5);
     font-size: 1.05rem;
     /* Code color similar to your image */
     font-family: 'Courier New', Courier, monospace;
 }
+
 .api {
     margin: 0px 20px;
     background-color: #21262d;
@@ -309,9 +358,10 @@ code {
     color: #bfc4db;
     border: 1px rgb(103, 94, 94) solid;
 }
-.api div{
+
+.api div {
     margin: 0px 20px;
-    border:1px rgb(103, 94, 94) solid;
+    border: 1px rgb(103, 94, 94) solid;
     width: fit-content;
     padding: 10px;
     padding-top: 0;
@@ -321,19 +371,19 @@ code {
 
 #pricing {
     text-align: justify;
-        width: 45%;
-        padding: 1.5rem;
-        padding-top: 2rem;
-        margin: auto;
-        background-color: #232a35;
-        border-radius: 20px;
+    width: 50%;
+    padding: 1.5rem;
+    padding-top: 2rem;
+    margin: auto;
+    background-color: #232a35;
+    border-radius: 20px;
 }
 
 #pricing h2 {
     color: #6752f1;
-        font-size: 24px;
-        margin: 0px 20px;
-        margin-top: 10px;
+    font-size: 24px;
+    margin: 0px 20px;
+    margin-top: 10px;
 }
 
 #pricing p {
@@ -346,7 +396,7 @@ code {
 #pricing table {
     width: 100%;
     border-collapse: collapse;
-    
+
     margin: 0px 20px;
     margin-bottom: 20px;
     /* margin-right: 20px; */
@@ -371,11 +421,12 @@ code {
     background-color: blueviolet;
     /* background-color: #f4f4f4; */
 }
-#pricing h3{
+
+#pricing h3 {
     font-size: 20px;
-        color: #6a39c6;
-        margin-left: 20px;
-        margin-bottom: -5px;
+    color: #6a39c6;
+    margin-left: 20px;
+    margin-bottom: -5px;
 
 }
 
@@ -391,13 +442,14 @@ button {
     border-radius: 5px;
     cursor: pointer;
 }
-.input{
+
+.input {
     margin: 0px 20px;
     padding: 30px;
     border-radius: 10px;
     border: 1px rgb(103, 94, 94) solid;
     margin-top: 20px;
-    
+
 }
 
 button:hover {
@@ -414,31 +466,87 @@ input[type="text"] {
     width: 80%;
 }
 
-@media screen and (max-width: 850px) {
-    .main{
-        width: 100%;
-    }
-    .heading{
-        width: 100vw;
-        border:2px red solid;
 
-    }
-    .nav{
-        width: 100px;
-    }
-    .main_content{
-        border: 2px red solid;
-        width: 100%;
-    }
+
+
+
+@media (max-width: 1100px) {
+
+    /* .heading{
+
+    } */
+     .main_content{
+        position: relative;
+        top: -8vh;
+     }
+     nav{
+        height: fit-content;
+     }
+     nav ul{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+     }
     .overview,
     .authentication,
     .endpoints,
-    .code_examples,
     .tutorial,
+    .code_examples,
     #pricing {
         width: 80%;
-        margin: auto;
         padding: 1rem;
-        /* Optional: Add padding for better spacing */
+    }
+
+
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .heading h1 {
+        font-size: 2em;
+    }
+    *{
+        overflow-x: hidden;
+    }
+
+    .overview,
+    .authentication,
+    .endpoints,
+    .tutorial,
+    .code_examples,
+    #pricing {
+        width: 90%;
+        padding: 1rem;
+    }
+
+    .generate_book {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+
+    input[type="text"] {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    .heading h1 {
+        font-size: 1.5em;
+    }
+
+    button {
+        width: 90%;
+        padding: 12px;
     }
 }

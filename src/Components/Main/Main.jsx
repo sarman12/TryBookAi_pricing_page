@@ -1,6 +1,5 @@
 import React from 'react';
 import './Main.css';
-import Nav from '../Nav/Nav';
 
 function Main() {
   return (
@@ -8,8 +7,18 @@ function Main() {
         <div className="heading">
             <h1>Book Generator API</h1>
         </div>
-        <Nav className='nav'/> {/* Add the Nav component here */}
         <div className="main_content">
+
+            <nav>
+                <ul>
+                    <li><a href="#overview">OVERVIEW</a></li>
+                    <li><a href="#authentication">AUTHENTICATION</a></li>
+                    <li><a href="#endpoints">ENDPOINTS</a></li>
+                    <li><a href="#tutorial">TUTORIAL</a></li>
+                    <li><a href="#code-examples">CODE EXAMPLES</a></li>
+                    <li><a href="#pricing">PRICING</a></li>
+                </ul>
+                </nav>
             <div id="overview" className="overview">
                 <h2>OVERVIEW</h2>
                 <p>The Book Generator API allows you to generate books on various topics using different language models. This documentation provides details on how to use the API, including authentication, available endpoints, and code examples.</p>
