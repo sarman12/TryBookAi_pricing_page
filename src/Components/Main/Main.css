@@ -6,17 +6,20 @@ body {
     background-color: #0D1117;
     color: #bfc4db;
     line-height: 1.6;
+    overflow-X: hidden;
 }
+
 
 /* Main Container */
 .main {
     text-align: center;
     /* border: 2px red solid; */
+    /* width: 100vw; */
 }
 
 /* Heading */
 .heading{
-    width: 100%;
+    /* width: 100%; */
     padding:1rem;
     background-color:rgb(100, 13, 238);
 }
@@ -48,7 +51,7 @@ body {
 
 .overview{
     /* border: 2px red solid; */
-    max-width: 50%;
+    width: 45%;
     padding: 1rem;
     margin: auto;
     background-color: #232a35;
@@ -67,7 +70,7 @@ body {
     margin: 0px 20px;
 }
 .authentication{
-    width: 50%;
+    width: 45%;
     padding: 1rem;
         margin: auto;
         background-color: #232a35;
@@ -84,7 +87,7 @@ body {
 }
 
 .endpoints {
-    width: 50%;
+    width: 45%;
         padding: 1rem;
         margin: auto;
         background-color: #232a35;
@@ -147,7 +150,6 @@ body {
 
 .request th,
 .request td {
-    letter-spacing: 1px;
     padding: 15px;
     font-weight: 600;
     text-align: left;
@@ -219,7 +221,7 @@ body {
 }
 .tutorial {
     text-align: justify;
-    width: 50%;
+    width: 45%;
         padding: 1.3rem;
         margin: auto;
         background-color: #232a35;
@@ -254,7 +256,7 @@ body {
 
 .code_examples {
     text-align: justify;
-        width: 50%;
+        width: 45%;
         padding: 1.5rem;
         padding-top: 2rem;
         margin: auto;
@@ -319,7 +321,7 @@ code {
 
 #pricing {
     text-align: justify;
-        width: 50%;
+        width: 45%;
         padding: 1.5rem;
         padding-top: 2rem;
         margin: auto;
@@ -337,8 +339,8 @@ code {
 #pricing p {
     line-height: 1.6;
     margin: 20px 20px;
-        margin-bottom: 10px;
-        color: white;
+    margin-bottom: 10px;
+    color: white;
 }
 
 #pricing table {
@@ -410,4 +412,33 @@ input[type="text"] {
     color: #bfc4db;
     margin-top: 10px;
     width: 80%;
+}
+
+@media screen and (max-width: 850px) {
+    .main{
+        width: 100%;
+    }
+    .heading{
+        width: 100vw;
+        border:2px red solid;
+
+    }
+    .nav{
+        width: 100px;
+    }
+    .main_content{
+        border: 2px red solid;
+        width: 100%;
+    }
+    .overview,
+    .authentication,
+    .endpoints,
+    .code_examples,
+    .tutorial,
+    #pricing {
+        width: 80%;
+        margin: auto;
+        padding: 1rem;
+        /* Optional: Add padding for better spacing */
+    }
 }

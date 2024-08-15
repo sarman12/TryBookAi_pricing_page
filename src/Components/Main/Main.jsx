@@ -8,7 +8,7 @@ function Main() {
         <div className="heading">
             <h1>Book Generator API</h1>
         </div>
-        <Nav /> {/* Add the Nav component here */}
+        <Nav className='nav'/> {/* Add the Nav component here */}
         <div className="main_content">
             <div id="overview" className="overview">
                 <h2>OVERVIEW</h2>
