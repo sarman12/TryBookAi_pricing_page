@@ -70,7 +70,7 @@ nav ul li:hover {
     text-align: left;
     grid-template-columns: repeat(1, 1fr);
     gap: 2rem;
-    background-color: rgb(22, 27, 34,.9);
+    background-color: rgb(22, 27, 34);
     border-radius: 8px;
     padding-bottom: 5rem;
     /* margin-bottom: -10rem; */
